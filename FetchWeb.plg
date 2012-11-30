@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FetchWeb - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/FetchWeb.res" /d "_DEBUG" "F:\FetchWeb.final\FetchWeb.final\FetchWeb.rc"" 
+Creating temporary file "C:\DOCUME~1\FAISAL~1\LOCALS~1\Temp\RSP15.tmp" with contents
+[
+wininet.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/FetchWeb.pdb" /debug /machine:I386 /out:"Debug/FetchWeb.exe" /pdbtype:sept 
+.\Debug\Downloading.obj
+.\Debug\FetchWeb.obj
+.\Debug\FetchWebDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\FetchWeb.res
+]
+Creating command line "link.exe @C:\DOCUME~1\FAISAL~1\LOCALS~1\Temp\RSP15.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+FetchWeb.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

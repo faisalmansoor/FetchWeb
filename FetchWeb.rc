@@ -1,0 +1,611 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FetchWeb.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON2               ICON    DISCARDABLE     "fetchweb.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FetchWeb"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            128,IDC_STATIC,13,14,21,20
+    LTEXT           "FetchWeb Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "BS II Karachi University",IDC_STATIC,39,50,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Developed By: Faisal Mansoor",IDC_STATIC,38,39,119,8
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,41,22,119,8
+END
+
+IDD_FETCHWEB_DIALOG DIALOGEX 0, 0, 350, 276
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FetchWeb : Developed By : Faisal Mansoor BS II Karachi University"
+
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PROJECT_NAME,100,15,175,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_URL,100,39,175,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_ACTION,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,100,60,175,48
+    EDITTEXT        IDC_PROXY,100,82,131,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,249,82,26,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_MAX_DEPTH,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,100,104,32,54
+    EDITTEXT        IDC_MAX_SIZE,222,104,53,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_MAX_TIME,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,100,128,50,53
+    CONTROL         "",IDC_MAX_CONNECTIONS,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,245,128,30,42
+    CONTROL         "",IDC_TIME_OUT,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,100,154,50,58
+    CONTROL         "",IDC_RETRIES,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,245,154,30,42
+    CONTROL         "",IDC_BROWSER_ID,"ComboBoxEx32",CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,100,176,176,48
+    EDITTEXT        IDC_USER_NAME,100,206,175,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,100,230,175,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Start Downloading",IDFINISH,259,255,86,14
+    PUSHBUTTON      "Help",ID_HELP,89,255,81,14
+    PUSHBUTTON      "Exit",IDCANCEL,7,255,82,14
+    CTEXT           "Starting URL :",IDC_STATIC,7,39,58,14,SS_CENTERIMAGE
+    CTEXT           "Project Name:",IDC_STATIC,7,15,59,14,SS_CENTERIMAGE
+    CTEXT           "Action",IDC_STATIC,7,60,62,13,SS_CENTERIMAGE
+    CTEXT           "Proxy",IDC_STATIC,7,82,62,15,SS_CENTERIMAGE
+    CTEXT           ":",IDC_STATIC,235,82,11,15,SS_CENTERIMAGE
+    CTEXT           "Max Depth",IDC_STATIC,7,104,62,15,SS_CENTERIMAGE
+    CTEXT           "Max Size Of File",IDC_STATIC,150,104,65,15,
+                    SS_CENTERIMAGE
+    CTEXT           "B",IDC_STATIC,275,104,8,15,SS_CENTERIMAGE
+    CTEXT           "Max Time",IDC_STATIC,7,128,62,16,SS_CENTERIMAGE
+    CTEXT           "No Of Simultaneous Downloads ",IDC_STATIC,158,128,71,16
+    CTEXT           "Time Out",IDC_STATIC,7,154,62,17,SS_CENTERIMAGE
+    CTEXT           "Retries",IDC_STATIC,164,154,51,17,SS_CENTERIMAGE
+    CTEXT           "Browser ID",IDC_STATIC,7,178,62,16,SS_CENTERIMAGE
+    PUSHBUTTON      "Browse Mirrored Sites",IDC_BROWSE,171,255,88,14
+    CTEXT           "User Name",IDC_STATIC,7,206,62,16,SS_CENTERIMAGE
+    CTEXT           "Password",IDC_STATIC,7,230,62,14,SS_CENTERIMAGE
+END
+
+IDD_DOWNLOADING DIALOG DISCARDABLE  0, 0, 351, 294
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Downloading"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,230,271,96,14
+    GROUPBOX        "Informtion",IDC_STATIC,7,7,337,60
+    CTEXT           "Bytes Saved :",IDC_STATIC,16,19,52,11,SS_CENTERIMAGE
+    CTEXT           "Time :",IDC_STATIC,16,34,52,12,SS_CENTERIMAGE
+    CTEXT           "Links Scanned :",IDC_STATIC,175,19,59,11,SS_CENTERIMAGE
+    CTEXT           "Files Written :",IDC_STATIC,175,34,59,12,SS_CENTERIMAGE
+    CTEXT           "Errors",IDC_STATIC,16,46,52,14,SS_CENTERIMAGE
+    CTEXT           "0",IDC_BYTES_SAVED,90,19,68,11,SS_CENTERIMAGE
+    CTEXT           "0:0:0",IDC_TIME,90,34,68,12,SS_CENTERIMAGE
+    CTEXT           "0",IDC_ERRORS,90,46,68,14,SS_CENTERIMAGE
+    CTEXT           "0",IDC_LINKS_SCANNED,266,19,60,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_FILES_LEFT,266,46,60,12,SS_CENTERIMAGE
+    GROUPBOX        "Downloading",IDC_STATIC,7,70,337,134
+    GROUPBOX        "Scanning",IDC_STATIC,7,205,337,61
+    LTEXT           "",IDC_URL0,67,81,163,10
+    PUSHBUTTON      "Skip",IDC_SKIP0,296,81,40,10
+    PUSHBUTTON      "Skip",IDC_SKIP1,296,95,40,11
+    PUSHBUTTON      "Skip",IDC_SKIP2,296,111,40,10
+    PUSHBUTTON      "Skip",IDC_SKIP3,296,125,40,10
+    PUSHBUTTON      "Skip",IDC_SKIP4,296,141,40,10
+    PUSHBUTTON      "Skip",IDC_SKIP5,296,156,40,10
+    PUSHBUTTON      "Skip",IDC_SKIP6,296,171,40,10
+    PUSHBUTTON      "Skip",IDC_SKIP7,296,188,40,10
+    LTEXT           "",IDC_URL1,68,95,162,11
+    LTEXT           "",IDC_URL3,68,127,162,10
+    LTEXT           "",IDC_URL2,67,111,163,10
+    LTEXT           "",IDC_URL7,68,187,162,10
+    LTEXT           "",IDC_URL4,68,141,162,10
+    LTEXT           "",IDC_URL6,67,171,163,10
+    LTEXT           "",IDC_STATUS4,16,141,52,10
+    LTEXT           "",IDC_URL5,67,156,163,10
+    LTEXT           "",IDC_STATUS0,16,81,52,10
+    LTEXT           "",IDC_STATUS1,16,95,52,11
+    LTEXT           "",IDC_STATUS2,16,111,52,10
+    LTEXT           "",IDC_STATUS3,16,125,52,10
+    LTEXT           "",IDC_STATUS5,18,156,50,10
+    LTEXT           "",IDC_STATUS6,18,171,50,10
+    LTEXT           "",IDC_STATUS7,16,187,52,10
+    CONTROL         "Progress1",IDC_PROGRESS0,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,81,47,10
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,96,48,10
+    CONTROL         "Progress1",IDC_PROGRESS4,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,141,47,10
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,111,48,10
+    CONTROL         "Progress1",IDC_PROGRESS3,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,124,47,10
+    CONTROL         "Progress1",IDC_PROGRESS5,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,156,47,10
+    CONTROL         "Progress1",IDC_PROGRESS6,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,171,48,10
+    CONTROL         "Progress1",IDC_PROGRESS7,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,241,188,48,10
+    LTEXT           "",IDC_SCAN_STATUS1,16,216,52,10
+    LTEXT           "",IDC_SCAN_URL1,68,215,162,10
+    CONTROL         "Progress1",IDC_SCAN_PROGRESS1,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,242,216,46,10
+    CTEXT           "Files Left:",IDC_STATIC,175,46,55,14,SS_CENTERIMAGE
+    CTEXT           "0",IDC_FILES_DOWNLOADED,266,34,60,12,SS_CENTERIMAGE
+    CTEXT           "Searching For Files",IDC_STATIC,16,272,74,13,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "Skip",IDC_BUTTON_SCAN1,296,214,40,10
+    PUSHBUTTON      "Skip",IDC_BUTTON_SCAN2,296,232,40,10
+    CONTROL         "Progress1",IDC_SCAN_PROGRESS2,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,243,234,46,10
+    LTEXT           "",IDC_SCAN_URL2,68,232,162,10
+    LTEXT           "",IDC_SCAN_STATUS2,14,232,54,10
+    PUSHBUTTON      "Skip",IDC_BUTTON_SCAN3,298,250,40,10
+    CONTROL         "Progress1",IDC_SCAN_PROGRESS3,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,243,250,46,10
+    LTEXT           "",IDC_SCAN_URL3,68,250,162,10
+    LTEXT           "",IDC_SCAN_STATUS3,16,250,54,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FetchWeb MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FetchWeb\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FetchWeb.EXE\0"
+            VALUE "ProductName", "FetchWeb Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_FETCHWEB_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        VERTGUIDE, 69
+        VERTGUIDE, 100
+        VERTGUIDE, 150
+        VERTGUIDE, 158
+        VERTGUIDE, 215
+        VERTGUIDE, 275
+        VERTGUIDE, 276
+        VERTGUIDE, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+        HORZGUIDE, 15
+        HORZGUIDE, 29
+        HORZGUIDE, 39
+        HORZGUIDE, 53
+        HORZGUIDE, 60
+        HORZGUIDE, 73
+        HORZGUIDE, 82
+        HORZGUIDE, 97
+        HORZGUIDE, 104
+        HORZGUIDE, 119
+        HORZGUIDE, 128
+        HORZGUIDE, 144
+        HORZGUIDE, 154
+        HORZGUIDE, 171
+        HORZGUIDE, 176
+        HORZGUIDE, 194
+        HORZGUIDE, 206
+        HORZGUIDE, 222
+        HORZGUIDE, 230
+        HORZGUIDE, 244
+    END
+
+    IDD_DOWNLOADING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        VERTGUIDE, 16
+        VERTGUIDE, 68
+        VERTGUIDE, 81
+        VERTGUIDE, 90
+        VERTGUIDE, 111
+        VERTGUIDE, 158
+        VERTGUIDE, 175
+        VERTGUIDE, 230
+        VERTGUIDE, 234
+        VERTGUIDE, 241
+        VERTGUIDE, 266
+        VERTGUIDE, 288
+        VERTGUIDE, 296
+        VERTGUIDE, 326
+        VERTGUIDE, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+        HORZGUIDE, 25
+        HORZGUIDE, 36
+        HORZGUIDE, 40
+        HORZGUIDE, 52
+        HORZGUIDE, 59
+        HORZGUIDE, 60
+        HORZGUIDE, 74
+        HORZGUIDE, 99
+        HORZGUIDE, 109
+        HORZGUIDE, 113
+        HORZGUIDE, 124
+        HORZGUIDE, 129
+        HORZGUIDE, 139
+        HORZGUIDE, 143
+        HORZGUIDE, 155
+        HORZGUIDE, 159
+        HORZGUIDE, 169
+        HORZGUIDE, 174
+        HORZGUIDE, 184
+        HORZGUIDE, 189
+        HORZGUIDE, 199
+        HORZGUIDE, 206
+        HORZGUIDE, 215
+        HORZGUIDE, 232
+        HORZGUIDE, 244
+        HORZGUIDE, 260
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FETCHWEB_DIALOG DLGINIT
+BEGIN
+    IDC_ACTION, 0x1234, 18, 0
+0x6f44, 0x6e77, 0x6f6c, 0x6461, 0x5720, 0x6265, 0x5320, 0x7469, 0x0065, 
+
+    IDC_ACTION, 0x1234, 32, 0
+0x6f44, 0x6e77, 0x6f6c, 0x6461, 0x4120, 0x6c6c, 0x5720, 0x6265, 0x5320, 
+0x7469, 0x7365, 0x4920, 0x206e, 0x6150, 0x6567, 0x0073, 
+    IDC_ACTION, 0x1234, 19, 0
+0x6547, 0x2074, 0x6553, 0x6170, 0x6172, 0x6574, 0x2064, 0x6946, 0x656c, 
+"\000" 
+    IDC_MAX_DEPTH, 0x1234, 2, 0
+0x0030, 
+    IDC_MAX_DEPTH, 0x1234, 2, 0
+0x0031, 
+    IDC_MAX_DEPTH, 0x1234, 2, 0
+0x0032, 
+    IDC_MAX_DEPTH, 0x1234, 2, 0
+0x0033, 
+    IDC_MAX_DEPTH, 0x1234, 2, 0
+0x0034, 
+    IDC_MAX_DEPTH, 0x1234, 2, 0
+0x0035, 
+    IDC_MAX_TIME, 0x1234, 1, 0
+"\000" 
+    IDC_MAX_TIME, 0x1234, 5, 0
+0x3831, 0x3030, "\000" 
+    IDC_MAX_TIME, 0x1234, 5, 0
+0x3633, 0x3030, "\000" 
+    IDC_MAX_TIME, 0x1234, 5, 0
+0x3237, 0x3030, "\000" 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0031, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0032, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0033, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0034, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0035, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0036, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0037, 
+    IDC_MAX_CONNECTIONS, 0x1234, 2, 0
+0x0038, 
+    IDC_TIME_OUT, 0x1234, 1, 0
+"\000" 
+    IDC_TIME_OUT, 0x1234, 3, 0
+0x3033, "\000" 
+    IDC_TIME_OUT, 0x1234, 3, 0
+0x3036, "\000" 
+    IDC_TIME_OUT, 0x1234, 4, 0
+0x3231, 0x0030, 
+    IDC_TIME_OUT, 0x1234, 4, 0
+0x3831, 0x0030, 
+    IDC_TIME_OUT, 0x1234, 4, 0
+0x3033, 0x0030, 
+    IDC_TIME_OUT, 0x1234, 4, 0
+0x3036, 0x0030, 
+    IDC_TIME_OUT, 0x1234, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_RETRIES, 0x1234, 1, 0
+"\000" 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0031, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0032, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0033, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0034, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0035, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0036, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0036, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0037, 
+    IDC_RETRIES, 0x1234, 2, 0
+0x0038, 
+    IDC_BROWSER_ID, 0x1234, 1, 0
+"\000" 
+    IDC_BROWSER_ID, 0x1234, 10, 0
+0x6546, 0x6374, 0x2068, 0x6557, 0x0062, 
+    IDC_BROWSER_ID, 0x1234, 52, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2030, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x4953, 0x2045, 0x2e35, 0x3130, 0x203b, 
+0x6957, 0x646e, 0x776f, 0x2073, 0x544e, 0x3520, 0x302e, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 42, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2030, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x4953, 0x2045, 0x2e35, 0x3b30, 0x5720, 
+0x6e69, 0x3233, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 48, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x4953, 0x2045, 0x2e34, 0x3130, 0x203b, 
+0x6957, 0x646e, 0x776f, 0x2073, 0x3839, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 48, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x4953, 0x2045, 0x2e34, 0x3130, 0x203b, 
+0x6957, 0x646e, 0x776f, 0x2073, 0x3539, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 48, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x4953, 0x2045, 0x2e34, 0x3130, 0x203b, 
+0x6957, 0x646e, 0x776f, 0x2073, 0x544e, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 29, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x3136, 0x5b20, 0x6e65, 0x205d, 
+0x5728, 0x6e69, 0x3839, 0x203b, 0x2949, "\000" 
+    IDC_BROWSER_ID, 0x1234, 23, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e33, 0x2030, 0x5728, 0x6e69, 0x3539, 
+0x203b, 0x2949, "\000" 
+    IDC_BROWSER_ID, 0x1234, 48, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e32, 0x2030, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x4953, 0x2045, 0x2e33, 0x3130, 0x203b, 
+0x6957, 0x646e, 0x776f, 0x2073, 0x3539, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 45, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x655b, 0x5d6e, 0x2820, 
+0x3158, 0x3b31, 0x4920, 0x203b, 0x694c, 0x756e, 0x2078, 0x2e32, 0x2e30, 
+0x3433, 0x6920, 0x3836, 0x2936, "\000" 
+    IDC_BROWSER_ID, 0x1234, 55, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x3630, 0x2d43, 0x4d45, 0x2d53, 
+0x2e31, 0x2034, 0x655b, 0x5d6e, 0x2820, 0x3158, 0x3b31, 0x5520, 0x203b, 
+0x7553, 0x4f6e, 0x2053, 0x2e35, 0x2e35, 0x2031, 0x7573, 0x346e, 0x296d, 
+"\000" 
+    IDC_BROWSER_ID, 0x1234, 32, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x4d28, 0x6361, 0x6e69, 
+0x6f74, 0x6873, 0x203b, 0x3b49, 0x5020, 0x4350, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 42, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e33, 0x3130, 0x432d, 0x4d2d, 0x4341, 
+0x534f, 0x2038, 0x4d28, 0x6361, 0x6e69, 0x6f74, 0x6873, 0x203b, 0x3b49, 
+0x5020, 0x4350, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 22, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e32, 0x2030, 0x4f28, 0x2f53, 0x3b32, 
+0x4920, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 43, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x655b, 0x5d6e, 0x2820, 
+0x3158, 0x3b31, 0x5520, 0x203b, 0x7553, 0x4f6e, 0x2053, 0x2e35, 0x2036, 
+0x7573, 0x346e, 0x2975, "\000" 
+    IDC_BROWSER_ID, 0x1234, 35, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x655b, 0x5d6e, 0x2820, 
+0x3158, 0x3b31, 0x4920, 0x203b, 0x4941, 0x2058, 0x2e34, 0x2931, "\000" 
+    IDC_BROWSER_ID, 0x1234, 54, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x655b, 0x5d6e, 0x2820, 
+0x3158, 0x3b31, 0x4920, 0x203b, 0x7246, 0x6565, 0x5342, 0x2044, 0x2e32, 
+0x2e32, 0x2d36, 0x4552, 0x454c, 0x5341, 0x2045, 0x3369, 0x3638, 0x0029, 
+
+    IDC_BROWSER_ID, 0x1234, 47, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e33, 0x3130, 0x4753, 0x6c6f, 0x4364, 
+0x532d, 0x4947, 0x2820, 0x3158, 0x3b31, 0x4920, 0x203b, 0x5249, 0x5849, 
+0x3620, 0x332e, 0x4920, 0x3350, 0x2932, "\000" 
+    IDC_BROWSER_ID, 0x1234, 45, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e33, 0x2030, 0x6557, 0x5462, 0x2f56, 
+0x2e31, 0x2032, 0x6328, 0x6d6f, 0x6170, 0x6974, 0x6c62, 0x3b65, 0x4d20, 
+0x4953, 0x2045, 0x2e32, 0x2930, "\000" 
+    IDC_BROWSER_ID, 0x1234, 51, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e32, 0x2030, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4d20, 0x2053, 0x7246, 0x6e6f, 0x5074, 0x6761, 
+0x2065, 0x7845, 0x7270, 0x7365, 0x2073, 0x2e32, 0x2930, "\000" 
+    IDC_BROWSER_ID, 0x1234, 29, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x3530, 0x5b20, 0x7266, 0x205d, 
+0x5728, 0x6e69, 0x3839, 0x203b, 0x2949, "\000" 
+    IDC_BROWSER_ID, 0x1234, 29, 0
+0x794c, 0x786e, 0x322f, 0x382e, 0x6572, 0x2e6c, 0x2033, 0x696c, 0x7762, 
+0x7777, 0x462d, 0x2f4d, 0x2e32, 0x3431, "\000" 
+    IDC_BROWSER_ID, 0x1234, 10, 0
+0x614a, 0x6176, 0x2e31, 0x2e31, 0x0034, 
+    IDC_BROWSER_ID, 0x1234, 51, 0
+0x6f4d, 0x697a, 0x6c6c, 0x2f61, 0x2e34, 0x2035, 0x6328, 0x6d6f, 0x6170, 
+0x6974, 0x6c62, 0x3b65, 0x4820, 0x5454, 0x6172, 0x6b63, 0x3320, 0x302e, 
+0x3b78, 0x5720, 0x6e69, 0x6f64, 0x7377, 0x3920, 0x2938, "\000" 
+    IDC_BROWSER_ID, 0x1234, 48, 0
+0x7948, 0x6570, 0x4272, 0x6f72, 0x7377, 0x7265, 0x2820, 0x7243, 0x7961, 
+0x203b, 0x3b49, 0x4f20, 0x6772, 0x6e61, 0x6369, 0x534f, 0x3920, 0x372e, 
+0x342e, 0x6232, 0x7465, 0x2d61, 0x3732, 0x0029, 
+    IDC_BROWSER_ID, 0x1234, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_DOWN         BITMAP  DISCARDABLE     "downloading.bmp"
+IDB_BITMAP_SEARCH       BITMAP  DISCARDABLE     "search.bmp"
+IDB_BITMAP_FETCHWEB     BITMAP  DISCARDABLE     "fetchweb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FetchWeb..."
+    IDS_DERROR              "Error"
+    IDS_DREADY              "Ready"
+    IDS_DSKIP               "Skipped"
+    IDS_DCONNECTING         "Connecting"
+    IDS_DCONNECTED          "Connected"
+    IDS_DRECEIVING          "Receiving"
+    IDS_DCOMPLETE           "Complete"
+    IDS_SWAITING            "Waiting"
+    IDS_SPARSING            "Parsing"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FetchWeb.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
